@@ -1,9 +1,9 @@
-var imgs=["virat kohli 1.jpg"]
+var imgs=["virat kohli 1.jpg","virat kohli.jpg"]
 const move=()=>{
-    var move=document.getElementById("move");
-    var newimg =Math.floor(Math.random()*imgs.length);
-    console.log(newimg);
+    var randomindex=Math.floor(Math.random()*imgs.length);
+    console.log(randomindex);
 
-    move.style.background=imgs[newimg];
-    move.style.transition="1s";
+    var image=document.getElementById("image");
+    image.src=imgs[randomindex];
+    image.style.transition="1s";
 }   
